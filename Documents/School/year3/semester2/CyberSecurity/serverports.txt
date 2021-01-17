@@ -1,0 +1,43 @@
+1) What is the definition of server port?
+
+The answer is a way to identify a specific process to which an 
+Internet or network message is to be forwarded to when it arrives at a server.
+The Transmission Control Protocol and the User Datagram Protocol, define
+a port number as a 16-bit integer that is appended to a message unit and put in the header.
+
+2) What is server port range?
+
+The answer is a way to categorize the identified processes running on the ports, using ranges. 
+Ports with numbers 0–1023 are called system or well-known ports.
+Registered ports are in the range 1024 to 49151. Dynamic ports are in the range 49152 to 65535. 
+The total range is 0 to 65535 as that is the highest number you can form with 16 bits.
+
+3) How many bits does number above represent?
+65535 in binary is:
+1111 1111 1111 1111 (which is the highest number able to be made with 16 bits)
+
+4) State 10 common server ports
+
+The answer is:
+
+20 - File Transfer Protocol Data Transfer 
+21 - File Transfer Protocol Command Control 
+22 - Secure Shell (SSH) 
+23 - Telnet 
+25 - Simple Mail Transfer Protocol (SMTP) 
+53 - Domain Name System (DNS) service
+80 - Hypertext Transfer Protocol (HTTP)
+443 - HTTP Secure (HTTPS)
+110 - Post Office Protocol (POP3)
+143 - Internet Message Access Protocol (IMAP)
+
+_______________________________________________
+Explanation(s)
+_______________________________________________
+bits		16	15	14	13	12	11	10	9	8	7	6	5	4	3	2	1
+max vals	65,536	32768	16384	8192	4096	2048	1024	512	256	128	64	32	16	8	4	2
+
+And the reason the highest port number is 65,535 and not 65,536 is that the port number 0 is used 
+for one of those values. 
+
+2 ^ N 
