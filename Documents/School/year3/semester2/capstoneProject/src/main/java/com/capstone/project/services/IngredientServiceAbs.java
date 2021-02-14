@@ -1,4 +1,8 @@
 package com.capstone.project.services;
 
-public interface IngredientServiceAbs {
+import com.capstone.project.model.Ingredient;
+
+
+
+public interface IngredientServiceAbs extends CrudService<Ingredient, Long>{
 }

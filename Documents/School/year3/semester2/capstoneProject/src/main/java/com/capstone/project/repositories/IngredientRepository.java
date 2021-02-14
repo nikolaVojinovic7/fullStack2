@@ -1,4 +1,10 @@
 package com.capstone.project.repositories;
 
-public interface IngredientRepository {
+import com.capstone.project.model.Ingredient;
+import com.capstone.project.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface IngredientRepository extends JpaRepository<Ingredient, Long> {
 }
