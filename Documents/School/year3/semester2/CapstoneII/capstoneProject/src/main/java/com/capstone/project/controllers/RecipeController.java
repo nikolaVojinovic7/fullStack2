@@ -27,7 +27,7 @@ public class RecipeController {
 
     // get recipe by id rest api
     @GetMapping("/getRecipe/{id}")
-    public Recipe getRecipeByName(@PathVariable Long id) {
+    public Recipe getRecipeById(@PathVariable Long id) {
         Recipe recipe = recipeService.findById(id);
         if(recipe == null){
             throw new ResourceNotFoundException("There is no recipe with id" + id);
@@ -36,7 +36,7 @@ public class RecipeController {
     }
 
     // create recipe rest api
-    @GetMapping("/createRecipe")
+    @PostMapping("/createRecipe")
     public Recipe createRecipe(@RequestBody Recipe recipe) {
         return recipeService.save(recipe);
     }

@@ -42,7 +42,7 @@ public class UserController {
     }
 
     // create user rest api
-    @GetMapping("/createUser")
+    @PostMapping("/createUser")
     public User createUser(@RequestBody User user) {
         return userService.save(user);
     }

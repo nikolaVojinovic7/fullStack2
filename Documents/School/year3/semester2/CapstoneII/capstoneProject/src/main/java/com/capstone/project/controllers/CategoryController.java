@@ -36,7 +36,7 @@ public class CategoryController {
     }
 
     // create user rest api
-    @GetMapping("/createCategory")
+    @PostMapping("/createCategory")
     public Category createCategory(@RequestBody Category category) {
         return categoryService.save(category);
     }

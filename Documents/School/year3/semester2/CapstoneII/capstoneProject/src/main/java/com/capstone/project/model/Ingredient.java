@@ -5,8 +5,6 @@ import java.util.Set;
 
 @Entity
 public class Ingredient {
-
-
     //properties
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

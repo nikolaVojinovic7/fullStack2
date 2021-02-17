@@ -38,7 +38,7 @@ public class IngredientController {
     }
 
     // create user rest api
-    @GetMapping("/createIngredient")
+    @PostMapping("/createIngredient")
     public Ingredient createIngredient(@RequestBody Ingredient ingredient) {
         return ingredientService.save(ingredient);
     }
